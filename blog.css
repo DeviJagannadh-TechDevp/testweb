@@ -1,0 +1,464 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (https://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+/* End of Reset */
+
+
+/* Grid Framework */
+
+*, *:before, *:after {
+  box-sizing: border-box;}
+
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1em;
+  margin: 0;
+}
+
+.grid, .row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col"] {
+  float: left;
+  margin-right: 1.5%;
+}
+
+[class*="col"]:last-child {
+  margin-right: 0;
+}
+
+.one-col {
+  width: 6.958%;
+}
+
+.two-col {
+  width: 15.41%;
+}
+
+.three-col {
+  width: 23.87%;
+}
+
+.four-col {
+  width: 32.33%;
+}
+
+.five-col {
+  width: 40.79%;
+}
+
+.six-col {
+  width: 49.25%;
+}
+
+.seven-col {
+  width: 57.70%;
+}
+
+.eight-col {
+  width: 66.16%;
+}
+
+.nine-col {
+  width: 74.62%;
+}
+
+.ten-col {
+  width: 83.08%;
+}
+
+.eleven-col {
+  width: 91.54%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+
+.one-offset {
+  margin-left: 8.458%;
+}
+
+.two-offset {
+  margin-left: 16.91%;
+}
+
+.three-offset {
+  margin-left: 25.37%;
+}
+
+.four-offset {
+  margin-left: 33.83%;
+}
+
+.five-offset {
+  margin-left: 42.29%;
+}
+
+.six-offset {
+  margin-left: 50.75%;
+}
+
+.seven-offset {
+  margin-left: 59.20%;
+}
+
+.eight-offset {
+  margin-left: 67.66%;
+}
+
+.nine-offset {
+  margin-left: 76.12%;
+}
+
+.ten-offset {
+  margin-left: 84.58%;
+}
+
+.eleven-offset {
+  margin-left: 91.54%;
+}
+
+@media all and (max-width: 768px) {
+  [class*="offset"] {
+    margin-left: 0;
+  }
+  [class*="col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .row {
+    margin: 0;
+  }
+}
+  
+/* Visual Styles */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue",         Helvetica, sans-serif;
+  background: rgb(75,92,102);
+  background-image: url('http://cdn0.vox-cdn.com/uploads/chorus_image/image/31106613/mars.0_standard_1280.0.jpg'); 
+  background-attachment:fixed;
+  background-size: cover;
+  height: auto;
+  
+
+}
+
+.rightt {
+  float: right;
+  
+}
+.rightt li {
+  float: right;
+  display: inline-block;
+  margin:1.25rem 7px;
+  color: white;
+  font-size: 0.720rem;
+  font-weight: 300;
+  letter-spacing: 0.10em;
+  margin-right: 0.6rem;
+}
+
+.rightt li:hover {
+  color:#fee934;
+  cursor:pointer;
+  
+}
+.top-bar {
+  background-color: rgb(95,118,133);
+  height: 3em;
+  width: 100%;
+  position:fixed;
+  top:0;
+  z-index: 100;
+  opacity: .75;
+}
+
+.logo {
+  display: inline-block;
+  color: white;
+  margin: 0.6em;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-style: oblique;
+}
+
+.main-background {
+  margin-top:5em;
+  
+ 
+}
+
+aside {
+  padding: 70px !important;
+  top: 42px;
+  left: 64px;
+  
+}
+
+.sidebar-container {
+  position:fixed;
+}
+
+
+.sidebar-header {
+  background-color:#ffeb00;
+  padding: 2em;
+  
+}
+
+.sidebar-header h1 {
+  font-size: 1.5rem;
+  margin-left: -0.3em;
+  font-weight: 800;
+  line-height: 130%;
+}
+
+.sidebar-header details {
+  font-size:0.75em;
+  margin-left: -0.3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  line-height: 150%;
+  color:#444;
+}
+
+.sidebar-header details summary::-webkit-details-marker {
+  display:none;
+}
+
+
+.author {
+ text-decoration: none;
+ color: #6d98a8;
+}
+
+.author:hover {
+  text-decoration: underline;
+}
+
+.sidebar-nav-control {
+  background-color: #2a2a2a;
+  font-size: .75em;
+  padding: 4px 0 3px;
+  text-align: center;
+  cursor:pointer;
+
+}
+
+.sidebar-nav-control:hover {
+  background-color:#222222;
+}
+
+.up:hover:before {
+  color:white;
+}
+
+.up:before {
+    content: "\25b2";
+    postion: absolute;
+    color:#aaa;
+}
+
+.down:before {
+  content: "\25bc";
+  postition: absolute;
+  color: #aaa;
+  
+}
+
+.down:hover:before {
+  color:white;
+}
+
+.sidebar-nav {
+  background-color:#313131;
+}
+
+.sidebar-nav li{
+  color:#ccc;
+  padding: 0.500em 0.375em 2.000em;
+  cursor: pointer;
+  font-size: 0.875em;
+
+}
+
+.sidebar-nav li:hover {
+  color:#6d98a8;
+}
+
+.sidebar-nav .selector {
+  color:#FFEB00;
+}
+
+.sidebar-nav .selector:hover {
+  color:#FFEB00;
+}
+
+
+/*remove the content-container class here*/
+
+.content-header {
+  background:#ffeb00;
+  margin-top: 2em;
+  padding:0.375em;
+  cursor:pointer;
+  
+}
+
+.content-header h1 {
+  text-align:center;
+  text-transform: uppercase;
+  color: #888;
+  font-size:.8em;
+  cursor:text;
+  
+}
+
+.left:before {
+  content:"\2329";
+  float: left;
+  margin-top: -12px;
+  color: grey;
+  
+}
+
+.left:hover:before {
+  color:#6d98a8;
+}
+
+.right:after {
+  content: "\232a";
+  float: right;
+  margin-top: -12px;
+  color: grey;
+}
+
+.right:hover:after {
+  color: #6d98a8;
+}
+
+.img {
+  padding: 0 0.625em 0 0;
+}
+
+.photo {
+  float:right;
+  padding: 7px;
+  width: 240px;
+  border: solid 1px #ddd;
+}
+.content-body {
+  background-color: white;
+  color: #666;
+  padding: 6em;
+  
+}
+
+.content-body p {
+  font-size: .9em;
+  line-height: 1.7em;
+}
+
+.content-body h1 {
+  font-weight:800;
+  font-size: 1.5em;
+  color: #444;
+
+}
+
+.highlights {
+  background-color: #ffeb00;
+  text-decoration: none;
+  color:#4c4e4d;
+}
+
+.highlights:hover {
+  text-decoration: underline;
+}
+
+.nasa a {
+  color:#6d98a8;
+  font-size:0.750em;
+  font-weight:800;
+  text-decoration: none;
+}
+
+.nasa a:hover {
+  text-decoration:underline;
+}
+
+.content-footer {
+  text-align: center;
+  border-top: solid 1px #AAA;
+}
+
+.content-footer p {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 768px) {
+  .sidebar-container {
+    position: static;
+  }
+}
+
+.share {
+  text-align: center;
+  border-top: solid 1px #AAA;
+  font-size: .75em;
+  padding:1em;
+  border-color:black;
+  background-color:white;
+  
+}
